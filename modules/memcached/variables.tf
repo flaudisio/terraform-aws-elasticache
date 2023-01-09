@@ -71,7 +71,7 @@ variable "preferred_availability_zones" {
 variable "maintenance_window" {
   description = <<-EOT
     Specifies the weekly time range for when maintenance on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24h clock UTC).
-    The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`"
+    The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`
   EOT
   type        = string
   default     = null

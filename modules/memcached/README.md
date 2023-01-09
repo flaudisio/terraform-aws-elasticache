@@ -46,7 +46,7 @@ No modules.
 | <a name="input_az_mode"></a> [az\_mode](#input\_az\_mode) | Whether the nodes in this Memcached node group are created in a single availability zone or created across multiple AZs in the cluster's region.<br>Valid values are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `num_cache_nodes` must be greater than 1 | `string` | `null` | no |
 | <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | Version number of the cache engine to be used. If not set, defaults to the latest version | `string` | `null` | no |
 | <a name="input_family"></a> [family](#input\_family) | The family of the cluster parameter group | `string` | `null` | no |
-| <a name="input_maintenance_window"></a> [maintenance\_window](#input\_maintenance\_window) | Specifies the weekly time range for when maintenance on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24h clock UTC).<br>The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`" | `string` | `null` | no |
+| <a name="input_maintenance_window"></a> [maintenance\_window](#input\_maintenance\_window) | Specifies the weekly time range for when maintenance on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24h clock UTC).<br>The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00` | `string` | `null` | no |
 | <a name="input_parameter_group_description"></a> [parameter\_group\_description](#input\_parameter\_group\_description) | The description of the parameter group. Defaults to "Managed by Terraform" | `string` | `null` | no |
 | <a name="input_parameter_group_name"></a> [parameter\_group\_name](#input\_parameter\_group\_name) | The name of the cluster parameter group. If not defined; `cluster_id` will be used | `string` | `null` | no |
 | <a name="input_parameters"></a> [parameters](#input\_parameters) | A list of parameter maps to apply | `list(map(string))` | `[]` | no |
@@ -67,7 +67,7 @@ No modules.
 | <a name="output_cluster_engine_version_actual"></a> [cluster\_engine\_version\_actual](#output\_cluster\_engine\_version\_actual) | The running version of the cache engine |
 | <a name="output_cluster_id"></a> [cluster\_id](#output\_cluster\_id) | The ID of the Memcached cluster |
 | <a name="output_cluster_port"></a> [cluster\_port](#output\_cluster\_port) | The port number on which each of the cache nodes accept connections |
-| <a name="output_cluster_tags_all"></a> [cluster\_tags\_all](#output\_cluster\_tags\_all) | Map of tags assigned to the resource, including those inherited from the provider default\_tags configuration block. |
+| <a name="output_cluster_tags_all"></a> [cluster\_tags\_all](#output\_cluster\_tags\_all) | Map of tags assigned to the resource, including those inherited from the provider default\_tags configuration block |
 | <a name="output_parameter_group_arn"></a> [parameter\_group\_arn](#output\_parameter\_group\_arn) | The ARN of the parameter group |
 | <a name="output_parameter_group_id"></a> [parameter\_group\_id](#output\_parameter\_group\_id) | The name of the parameter group |
 | <a name="output_parameter_group_name"></a> [parameter\_group\_name](#output\_parameter\_group\_name) | The name of the parameter group |

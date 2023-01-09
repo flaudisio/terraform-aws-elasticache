@@ -34,7 +34,7 @@ output "cluster_configuration_endpoint" {
 }
 
 output "cluster_tags_all" {
-  description = "Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block."
+  description = "Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block"
   value       = aws_elasticache_cluster.this.tags_all
 }
 
