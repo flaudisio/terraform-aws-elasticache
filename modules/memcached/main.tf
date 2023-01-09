@@ -41,7 +41,7 @@ resource "aws_elasticache_cluster" "this" {
   availability_zone            = var.availability_zone
   preferred_availability_zones = var.preferred_availability_zones
 
-  parameter_group_name = var.parameter_group_name
+  parameter_group_name = aws_elasticache_parameter_group.this.id
 
   apply_immediately  = var.apply_immediately
   maintenance_window = var.maintenance_window
