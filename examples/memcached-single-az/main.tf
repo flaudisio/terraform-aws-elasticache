@@ -48,6 +48,8 @@ module "memcached" {
   num_cache_nodes = 1
   az_mode         = "single-az"
 
+  apply_immediately = true
+
   family = "memcached1.6"
 
   tags = local.tags
