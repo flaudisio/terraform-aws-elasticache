@@ -28,6 +28,8 @@ locals {
 resource "aws_elasticache_subnet_group" "example" {
   name       = var.cluster_id
   subnet_ids = data.aws_subnets.selected.ids
+
+  tags = local.tags
 }
 
 module "memcached" {
