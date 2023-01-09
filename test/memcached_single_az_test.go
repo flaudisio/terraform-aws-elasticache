@@ -2,6 +2,7 @@ package test
 
 import (
 	"fmt"
+	"strings"
 	"testing"
 
 	"github.com/gruntwork-io/terratest/modules/random"
@@ -24,7 +25,7 @@ func TestMemcachedSingleAZ(t *testing.T) {
 	})
 
 	stage(t, "init", func() {
-		clusterID := fmt.Sprintf("memcached-single-az-example-%s", random.UniqueId())
+		clusterID := fmt.Sprintf("memcached-single-az-example-%s", strings.ToLower(random.UniqueId()))
 
 		terraformOptions := &terraform.Options{
 			TerraformDir: workingDir,
