@@ -16,7 +16,8 @@ For example, to use `v0.1.0` of the `memcached` module:
 
 ```hcl
 module "memcached" {
-  source = "git::https://github.com/flaudisio/terraform-aws-elasticache.git//modules/memcached?ref=v0.1.0"
+  source  = "flaudisio/elasticache/aws//modules/memcached"
+  version = "0.1.0"
 
   # Module inputs
   cluster_id     = "my-cluster"
